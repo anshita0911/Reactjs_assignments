@@ -1,0 +1,15 @@
+ques 5
+
+A “key” is a special string attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list are changed, updated, or deleted.
+
+Keys are used to give an identity to the elements in the lists. It is recommended to use a string as a key that uniquely identifies the items in the list.  
+In order to help React identify which items have been changed, have been added, or have been removed, we usually pass down a key prop to each mapped component or JSX Element in order to establish an identity for each entity.
+
+Syntax:
+
+const numbers = [1, 2, 3, 4, 5];
+const updatedNums = numbers.map((number, index) =>
+    <li key={index}>
+        {number}
+    </li>
+);
