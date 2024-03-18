@@ -1,0 +1,50 @@
+Ques 3 - How to send security token in axios get request
+
+
+
+const config = {
+    headers: { Authorization: `Bearer ${token}` }
+};
+
+const bodyParameters = {
+   key: "value"
+};
+
+Axios.post( 
+  'http://localhost:8000/api/v1/get_token_payloads',
+  bodyParameters,
+  config
+).then(console.log).catch(console.log);
+The first parameter is the URL.
+The second is the JSON body that will be sent along your request.
+The third parameter are the headers (among other things). Which is JSON as well.
+
+
+
+Ques 4 - How to create class component in React JS?
+
+
+When creating a React component, the component's name must start with an upper case letter.
+
+The component has to include the extends React.Component statement, this statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.
+
+The component also requires a render() method, this method returns HTML.
+
+ExampleGet your own React.js Server
+Create a Class component called Car
+
+class Car extends React.Component {
+  render() {
+    return <h2>Hi, I am a Car!</h2>;
+  }
+}
+
+Now your React application has a component called Car, which returns a <h2> element.
+
+To use this component in your application, use similar syntax as normal HTML: <Car />
+
+Example
+Display the Car component in the "root" element:
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Car />);
